@@ -56,7 +56,7 @@ class Parameter_select_window:
             print('GOING with default parameters!')
             path = "./pretrain data/"
             name = 'NNCT'
-            batch_sizes=32
+            batch_sizes=16
             max_sequence_len = 64
             emb_dims = 128
             n_heads = 16

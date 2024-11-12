@@ -271,7 +271,6 @@ class GPT_MODEL:
                     valid = self.model_structure(vX, no_drop_out=True)
                     valid_loss = valid.cross_entropy_loss(vY)
                     print(f'iter:{i}  train: {loss.data} / valid: {valid_loss.data} / n_parameters: {self.optimizer.num_parameters}')
-            
             if datas_export:
                 loss.data_export(self.path)
     def inferance(self, max_new_tokens=200):
